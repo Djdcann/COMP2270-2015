@@ -1019,7 +1019,18 @@ Out sick
 
 https://gitlab.com/lawrancej/COMP2270-2015/raw/master/exams/another-practice-midterm.pdf[Midterm review]
 
+== October 6
+
+Midterm review
+
+== October 8
+
+Midterm review? Again? Srsly?
+
 == October 9
 
 Midterm
 
+== October 13
+
+https://gitlab.com/lawrancej/COMP2270-2015/blob/master/circuits/cpu-16bit-isa.adoc[CPU stuff]
