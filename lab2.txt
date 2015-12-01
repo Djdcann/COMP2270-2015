@@ -1,0 +1,75 @@
+Lab 2
+Derek Cannistraro
+
+Sequential design: Even/Odd number of zeroes and ones
+
+1a. 2 bits
+1b. 1 bit
+2. States:  				Inputs:
+   both even: 00			0
+   0 odd:     01			1
+   1 odd:     10
+   both odd:  11
+
+3. Current State | Input | Next State
+   --------------+-------+-----------
+    00			 | 0	 | 01
+	00			 | 1	 | 10
+	01			 | 0	 | 00
+	01			 | 1	 | 11
+	10			 | 0	 | 11
+	10			 | 1	 | 00
+	11			 | 0	 | 10
+	11			 | 1	 | 01
+	
+Vending machine
+
+1a. 3 inputs: nickel, dime, or quarter
+1b. 6 states: 0 cents, 5 cents, 10 cents, 15 cents, 20 cents, 25 cents
+1c. 3 bits
+1d. 2 bits
+2. States:			Inputs:
+   0 cents:  000	nickel:  00
+   5 cents:  001	dime: 	 01
+   10 cents: 010	quarter: 10
+   15 cents: 011
+   20 cents: 100
+   25 cents: 101
+  
+3. Current State | Input | Next State
+   --------------+-------+-----------
+    000			 | 00	 | 001
+	000			 | 01	 | 010
+	000			 | 10	 | 101
+	000			 | 11	 | 110
+	001			 | 00	 | 010
+	001			 | 01	 | 011
+	001			 | 10	 | 110
+	001			 | 11	 | 110
+	010			 | 00	 | 011
+	010			 | 01	 | 100
+	010			 | 10	 | 110
+	010			 | 11	 | 110
+	011			 | 00	 | 100
+	011			 | 01	 | 101
+	011			 | 10	 | 110
+	011			 | 11	 | 110
+	100			 | 00	 | 101
+	100			 | 01	 | 110
+	100			 | 10	 | 110
+	100			 | 11	 | 110
+	101			 | 00	 | 110
+	101			 | 01	 | 110
+	101			 | 10	 | 110
+	101			 | 11	 | 110
+	110			 | 00	 | 110
+	110			 | 01	 | 110
+	110			 | 10	 | 110
+	110			 | 11	 | 110
+	111			 | 00	 | 111
+	111			 | 01	 | 111
+	111			 | 10	 | 111
+	111			 | 11	 | 111
+	
+4. 5 bits
+5. 3 bits
