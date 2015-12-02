@@ -1,0 +1,71 @@
+Lab 3
+Derek Cannistraro
+
+Maximum
+
+1.	int max = a;
+	if (b > a) {
+		max = b;
+	}
+	return max;
+
+2.	0	LOAD R1, 0x60		
+	1	LOAD R2, 0x61		
+	2	SUB R3, R1, R2		
+	3	JZG R3, 0x06		
+	4	ADD R3, R2, R0		
+	5	JZE R0, 0x07					
+	6	ADD R3, R1, R0		
+	7							
+	
+3.	0	c160
+	1	c261
+	2	1312
+	3	a306
+	4	0320
+	5	8007				
+	6	0310
+	7	
+	
+Sum
+
+1.	int sum = 0;
+	for (int i=0;i<length;i++){
+		sum += array[i];
+	}
+	return sum;
+	
+2.  length array in x60
+	array starts at 61
+	
+	0	LOAD R1, 0x60
+	1	MOV R2, 0x61
+	2	MOV R3, 0
+	3	MOV R5, 1
+	4
+	5	JZE R1, 12
+	6	SUB R1, R1, R5
+	7	ADD R4, R2, R0
+	8	ADD R4, R1, R4
+	9	LOAD R4
+	10	ADD R3, R4, R3
+	11	JZE R0, 5
+
+3.	0	c160
+	1	7261
+	2	7300
+	3	7501
+	4
+	5	8112
+	6	1115
+	7	0420
+	8	0414
+	9	d400
+	10	0343
+	11	8005
+	12
+	
+	
+	
+	
+	
